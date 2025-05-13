@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="settingsTitle">إعدادات المسبحة</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h2 data-i18n="settingsTitle">⚙️ الإعدادات</h2>
+    <button id="toggleTheme" class="theme-toggle">🌙</button>
+  </div>
+  
+  <div class="settings-container">
+    <div class="setting-group">
+      <h3 data-i18n="appearance">المظهر</h3>
+      <label class="setting-item">
+        <span data-i18n="darkMode">الوضع الليلي:</span>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider round"></span>
+        </label>
+      </label>
+      
+      <label class="setting-item">
+        <span data-i18n="language">اللغة:</span>
+        <select id="languageSelect" class="setting-input">
+          <option value="ar">العربية</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+    </div>
+    
+    <div class="setting-group">
+      <h3 data-i18n="goals">الأهداف</h3>
+      <label class="setting-item">
+        <span data-i18n="dailyGoal">الهدف اليومي:</span>
+        <input type="number" id="dailyGoal" class="setting-input" min="1" value="100">
+      </label>
+    </div>
+    
+    <div class="setting-group">
+      <h3 data-i18n="customAzkar">أذكار مخصصة</h3>
+      <p data-i18n="customAzkarDesc">أدخل الأذكار (كل ذكر في سطر)</p>
+      <textarea id="customAzkar" rows="5" class="setting-textarea"></textarea>
+    </div>
+    
+    <div class="settings-buttons">
+      <button id="saveSettings" class="main-btn" data-i18n="save">💾 حفظ</button>
+      <a href="popup.html" class="settings-link" data-i18n="back">↩️ العودة</a>
+    </div>
+  </div>
+  
+  <script src="settings.js"></script>
+</body>
+</html>

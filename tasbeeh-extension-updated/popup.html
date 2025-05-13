@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="appTitle">مسبحة إلكترونية</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h2 data-i18n="appTitle">🕌 مسبحة إلكترونية</h2>
+    <button id="toggleTheme" class="theme-toggle">🌙</button>
+  </div>
+  
+  <div class="counter-container">
+    <div id="zekr" class="zekr-text">سبحان الله</div>
+    <div id="counter" class="counter">0</div>
+    <button id="increment" class="main-btn" data-i18n="countBtn">تسبيح</button>
+    <button id="reset" data-i18n="resetBtn">تصفير</button>
+  </div>
+  
+  <div class="stats">
+    <div><span data-i18n="today">اليوم:</span> <span id="dailyCounter">0</span></div>
+    <div><span data-i18n="total">المجموع:</span> <span id="totalCounter">0</span></div>
+  </div>
+  
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="progress-text" id="progressText">0%</div>
+  </div>
+  
+  <div class="footer">
+    <a href="settings.html" class="settings-link" data-i18n="settings">⚙️ إعدادات</a>
+    <div class="last-updated" id="lastUpdated"></div>
+  </div>
+  <footer style="text-align: center; margin-top: 20px; font-size: 12px; color: #888;">
+  © 2025 مسبحة - Tasbeeh Extension by Hassan. All rights reserved.
+</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
